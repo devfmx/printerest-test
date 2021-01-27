@@ -1,0 +1,175 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Lato',sans-serif;
+    font-weight: bold;
+}
+
+#navbar-pinterest{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    z-index: 99;
+    top: 0;
+}
+.ho{
+    padding: 15px;
+}
+.ho:hover{
+    background-color: #EEF0ED;
+    border-radius: 30px;
+}
+
+#content {
+  margin-top: 10rem;
+}
+#ho1{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border-radius: 30px;
+}
+.img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    padding: 10px;
+}
+.img:hover{
+    background-color: #EEF0ED;
+    border-radius: 50%;
+}
+.img:last-child{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    padding: 7px;
+}
+header input{
+    width: 60%;
+    height: 35px;
+    border-radius: 30px;
+    border: none;
+    background-color: #EEF0ED;
+    padding-left: 40px;
+    background-image:url(img/buscar.svg); 
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 5px;
+    background-position-x: 15px;
+}
+header input:hover{
+    background-color: #C9CBC8;
+}
+header input:focus{
+    outline: none;
+}
+
+main{
+    display: flex;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+section{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.body{
+    margin: 10px;
+    border-radius: 20px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    width: 97%;
+    max-height: 100%;
+}
+
+.card-image {
+    position: relative;
+    width: 97%;
+    display: flex;
+  }
+   
+   .middle {
+    opacity: 0;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+  transform: translate(-150%, 0%); 
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: space-between;
+  }
+  button{
+height: 40px;
+color: white;
+background-color: #E83917;
+border: none;
+border-radius: 20px;
+padding-left: 15px;
+padding-right: 15px;
+font-size: 12px;
+}
+button:hover{
+    background-color: #B03027;
+}
+
+  .miniboton{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    padding: 7px;
+    background-color: white;
+    opacity: .7;
+    align-self: flex-end;
+  }
+
+  .miniboton:hover{
+    background-color: white; 
+    opacity: 1;
+  }
+   .card-image:hover .body {
+    filter: brightness(90%);
+  }
+   .card-image:hover .middle {
+    opacity: 1;
+  }
+ 
+  footer{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding-bottom: 20px;
+      padding-right: 20px;
+      position: fixed;
+    right: 0px;
+    bottom: 0px;
+  }
+  footer img{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0px 0px 2px 0px;
+    margin: 5px; 
+  }
+
+  footer img:hover{
+    background-color: #EEF0ED;
+  }
+
+  @media screen and (max-width:600px){ 
+main{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.body, .container{
+  width: 100%;
+}
+  }
